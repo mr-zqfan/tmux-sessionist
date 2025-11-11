@@ -87,7 +87,7 @@ main() {
 	else
 		i=1
 		for session in $session_list; do
-		  echo "$i: $session"
+		  echo "F$i: $session"
 		  i=$((i+1))
 		done
 	fi
