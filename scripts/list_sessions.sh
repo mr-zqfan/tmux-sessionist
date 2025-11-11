@@ -21,7 +21,7 @@ get_column_number() {
 	fi
 	echo "$columns"
 }
-
+tmux-plugins/tmux-sessionist'
 get_column_width() {
 	declare -a array=("${!1}")
 	local width=0
@@ -85,7 +85,11 @@ main() {
 	if [ $output_height -gt $pane_height ]; then
 		print_multi_column_output "$output_height" "$pane_height" "$pane_width"
 	else
-		echo "$session_list"
+		i=1
+		for session in $session_list; do
+		  echo "$i: $session"
+		  i=$((i+1))
+		done
 	fi
 }
 main
