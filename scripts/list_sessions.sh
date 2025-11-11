@@ -21,7 +21,7 @@ get_column_number() {
 	fi
 	echo "$columns"
 }
-tmux-plugins/tmux-sessionist'
+
 get_column_width() {
 	declare -a array=("${!1}")
 	local width=0
